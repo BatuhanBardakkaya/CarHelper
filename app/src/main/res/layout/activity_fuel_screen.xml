@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FuelScreen">
+
+    <EditText
+        android:id="@+id/AracKmTxt"
+        android:layout_width="287dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="208dp"
+        android:ems="10"
+        android:hint="Araç Kilometresi"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/OdenenTutarTxt"
+        android:layout_width="287dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Ödenen Tutar"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AracKmTxt" />
+
+    <Button
+        android:id="@+id/FuelKytBtn"
+        android:layout_width="253dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:onClick="Onayla"
+        android:text="Onayla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OdenenTutarTxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
